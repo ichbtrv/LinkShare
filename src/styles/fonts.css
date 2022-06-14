@@ -1,0 +1,62 @@
+@font-face {
+	font-family: SFUIDisplay-Bold;
+	font-style: regular;
+	font-weight: 700;
+	src: url('/fonts/SFUIDisplay-Bold.woff');
+}
+
+@font-face {
+	font-family: SFUIDisplay-Semibold;
+	font-style: regular;
+	font-weight: 600;
+	src: url('/fonts/SFUIDisplay-Semibold.woff');
+}
+
+@font-face {
+	font-family: SFUIDisplay-Medium;
+	font-style: regular;
+	font-weight: 500;
+	src: url('/fonts/SFUIDisplay-Medium.woff');
+}
+
+@font-face {
+	font-family: SFUIDisplay;
+	font-style: regular;
+	font-weight: 500;
+	src: url('./fonts/SFUIDisplay-Regular.woff');
+}
+
+@font-face {
+	font-family: SFUIDisplay-Thin_1;
+	font-style: regular;
+	font-weight: 500;
+	src: url('/fonts/SFUIDisplay-Thin_1.woff');
+}
+
+@font-face {
+	font-family: SFUIDisplay-Thin;
+	font-style: regular;
+	font-weight: 500;
+	src: url('/fonts/SFUIDisplay-Thin.woff');
+}
+
+@font-face {
+	font-family: SFUIDisplay-Light;
+	font-style: regular;
+	font-weight: 500;
+	src: url('/fonts/SFUIDisplay-Light.woff');
+}
+
+@font-face {
+	font-family: SFUIDisplay-UltraLight;
+	font-style: regular;
+	font-weight: 100;
+	src: url('/fonts/SFUIDisplay-Ultralight.woff');
+}
+
+@font-face {
+	font-family: plex;
+	font-style: regular;
+	font-weight: 500;
+	src: url('./fonts/ibmplexsans-regular.woff2');
+}

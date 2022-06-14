@@ -1,0 +1,104 @@
+.formlayout {
+  @apply grid gap-2;
+}
+
+.formlayout--flex {
+  @apply flex justify-between;
+}
+
+.formlayout--flex-right div:last-child {
+  text-align: right;
+}
+
+.formlayout--flex-left div:first-child {
+  order: 2;
+}
+
+.formlayout--flex-left div:last-child {
+  order: 1;
+}
+
+.formlayout--non-responsive {
+  @apply grid grid-cols-12 gap-4;
+}
+
+.formlayout--responsive {
+  @apply md:grid md:grid-cols-12 md:gap-4;
+}
+
+.formlayout__label-container-horizontal {
+  @apply justify-between col-span-12;
+}
+
+.formlayout__label-container-vertical {
+  @apply col-span-4;
+}
+
+.formlayout__content-container-horizontal {
+  @apply col-span-12;
+}
+
+.formlayout__content-container-vertical {
+  @apply col-span-8;
+}
+
+.formlayout__content-container-vertical--align-right {
+  @apply text-right;
+}
+
+.formlayout__label {
+  @apply block text-sm text-input-label-light text-input-label-dark;
+}
+
+.formlayout__label-opt,
+.formlayout__label .formlayout__label-before,
+.formlayout__label .formlayout__label-after {
+  @apply text-sm text-gray-300;
+}
+
+.formlayout__error {
+  @apply mt-2 text-sm text-red-500;
+}
+
+.formlayout__description {
+  @apply mt-2 text-sm text-gray-300;
+}
+
+/* .formlayout__content-container--width-25 {
+  width: 
+} */
+
+/*
+  Layout sizes
+*/
+
+.formlayout--tiny .formlayout__label,
+.formlayout--tiny .formlayout__label-opt,
+.formlayout--tiny .formlayout__error,
+.formlayout--tiny .formlayout__description {
+  @apply text-xs;
+}
+.formlayout--small .formlayout__label,
+.formlayout--small .formlayout__label-opt,
+.formlayout--small .formlayout__error,
+.formlayout--small .formlayout__description {
+  @apply text-sm leading-4;
+}
+.formlayout--medium .formlayout__label,
+.formlayout--medium .formlayout__label-opt,
+.formlayout--medium .formlayout__error,
+.formlayout--medium .formlayout__description {
+  @apply text-sm;
+}
+.formlayout--large .formlayout__label,
+.formlayout--large .formlayout__label-opt,
+.formlayout--large .formlayout__error,
+.formlayout--large .formlayout__description {
+  @apply text-base;
+}
+.formlayout--xlarge .formlayout__label,
+.formlayout--xlarge .formlayout__label-opt,
+.formlayout--xlarge .formlayout__error,
+.formlayout--xlarge .formlayout__description {
+  @apply text-base;
+}

@@ -1,0 +1,144 @@
+@import './fonts.css';
+@import './tailwind.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: plex;
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+svg {
+  text-rendering: optimizeLegibility;
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+s button:active {
+  transform: translateY(2px);
+}
+
+button {
+  background-color: transparent;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0.6em 1.8em;
+  text: 16px;
+  margin: 0 0.25rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  drop-shadow: rgba(255, 255, 255, 1);
+  box-shadow: rgb(33 33 33 / 80%) 0px 0px 1px 0px,
+    rgb(41 80 120 / 10%) 0px 0px 40px 1px;
+}
+
+input {
+  transition: background 0.2s ease;
+  font-family: inherit;
+  color: #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+a {
+  @apply text-blue-700;
+}
+
+a:hover {
+  @apply border-b-2 border-blue-700;
+}
+
+.fade-in {
+  display: flex !important;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.reveal {
+  --reveal-duration: 500ms;
+  --reveal-delay: 0;
+  animation-name: reveal;
+  animation-duration: var(--reveal-duration);
+  animation-delay: var(--reveal-delay);
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.appear {
+  opacity: 0;
+  animation: appear 1.5s cubic-bezier(0.1, 0, 0.175, 1) forwards;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+.show-on-mobile {
+  display: block;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .show-on-mobile {
+    display: none;
+  }
+
+  .hide-on-mobile {
+    display: block;
+  }
+}
+
+.hide-on-tablet {
+  display: block;
+}
+
+.show-on-tablet {
+  display: none;
+}
